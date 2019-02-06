@@ -95,7 +95,6 @@ public class King extends Piece {
 				if(i >= 1 && i <= 8 && j >= 1 && j <= 8) {
 					if(Tile.getTiles()[i - 1][j - 1].hasPiece()) {
 						if(Tile.getTiles()[i - 1][j - 1].getPiece().getSide() != this.getSide() && !Tile.getTiles()[i - 1][j - 1].isAttacked(this.getSide())) {
-							if(!Piece.isCheck(this, Tile.getTiles()[i - 1][j - 1]))
 								tiles.add(Tile.getTiles()[i - 1][j - 1]);
 						}
 					}

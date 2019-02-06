@@ -55,14 +55,15 @@ public class Pawn extends Piece {
 			for(int i = x.length; i < x.length * 2; i++) {
 				if(pawns[i] == null) {
 					pawns[i] = new Pawn(x[i - x.length], y[1], side);
+					return pawns[i];
 				}
 				else {
 					if(pawns[i].getXPos() != x[i - x.length] && pawns[i].getYPos() != y[1]) {
 						pawns[i].setXPos(x[i - x.length]);
 						pawns[i].setYPos(y[1]);
+						return pawns[i];
 					}
 				}
-				return pawns[i];
 			}
 		}
 		

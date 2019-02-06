@@ -27,7 +27,7 @@ public class Queen extends Piece {
 		if(side == Side.Black) {
 			y = 1;
 			if(blackQueen == null)
-				blackQueen = new Queen(0, 0, side);
+				blackQueen = new Queen(x, y, side);
 			blackQueen.setXPos(x);
 			blackQueen.setYPos(y);
 			return blackQueen;
@@ -35,7 +35,7 @@ public class Queen extends Piece {
 		else {
 			y = 8;
 			if(whiteQueen == null)
-				whiteQueen = new Queen(0, 0, side);
+				whiteQueen = new Queen(x, y, side);
 			whiteQueen.setXPos(x);
 			whiteQueen.setYPos(y);
 		

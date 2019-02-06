@@ -44,7 +44,6 @@ public class Main extends Application {
 					System.out.println("R pressed");
 				}
 			}
-			
 		});
 		
 //		MusicPlayer player = new MusicPlayer(true, "Soundtrack2", "Soundtrack3", "Soundtrack1"); //"catch_01", "move_01", "move_02",  
